@@ -1,13 +1,12 @@
-const express = require('express')
+const express = require('express');
 
 const app = express();
 const port = 3003;
 const path = require('path');
-
+const expressStaticGzip = require('express-static-gzip');
 const Business = require('./db/Business.js');
 
 
-const expressStaticGzip = require("express-static-gzip");
 
 
 // app.use('/', express.static(path.resolve(__dirname, '..', 'client', 'dist')));
